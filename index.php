@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <!--
-Oh, hi!
-You shouldn"t be looking here, because it's going to give you cancer.
-I hacked this thing together in thirty minutes, okay? Please forgive me for my
-terrible code practices.
+Oh hi, my fellow tinkerer!
+
+You shouldn't be looking here, because it's going to give you cancer.
+I hacked this thing together in thirty minutes. Please forgive me for my
+terrible practices.
 -->
 <html>
     <head>
