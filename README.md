@@ -1,5 +1,5 @@
-# [sofeme](https://sofeme.ifvictr.com)
-So everyone wants to be a @SOF3 (alternate spelling of **SOFe**). Why not have a tool that allows you to do just that? You can create your very own SOFe avatar, easily!
+# [sofeME](https://sofeme.ifvictr.com)
+So everyone wants to be a [@SOF3](https://forums.pmmp.io/members/sofe.4) (alternate spelling of **SOFe**). Why not have a tool that allows you to do just that? You can create your very own SOFe avatar, easily!
 
 ### Requirements
 - PHP
