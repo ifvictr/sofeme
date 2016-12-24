@@ -1,13 +1,16 @@
 {
     "name": "ifvictr/sofeme",
-    "description": "Get your own SOFe avatar today!",
+    "description": "Get your very own SOFe profile picture today! Hacked together in half an hour, so please, watch your step!",
+    "type": "project",
+    "require": {
+        "ext-imagick": "*"
+    },
+    "license": "MIT",
     "authors": [
         {
             "name": "Victor Truong",
             "email": "me@ifvictr.com"
         }
     ],
-    "require": {
-        "ext-imagick": "*"
-    }
+    "minimum-stability": "stable"
 }
