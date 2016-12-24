@@ -1,0 +1,13 @@
+{
+    "name": "ifvictr/sofeme",
+    "description": "Get your own SOFe avatar today!",
+    "authors": [
+        {
+            "name": "Victor Truong",
+            "email": "me@ifvictr.com"
+        }
+    ],
+    "require": {
+        "ext-imagick": "*"
+    }
+}
