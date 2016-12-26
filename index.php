@@ -38,10 +38,6 @@ terrible practices.
             a:active{
                 opacity: 0.85;
             }
-            form{
-                margin: 0;
-                margin-top: 1.5em;
-            }
             img{
                 max-width: 100%;
             }
@@ -55,7 +51,7 @@ terrible practices.
                 padding: 0.5em;
                 transition: 0.2s box-shadow ease-in-out;
             }
-            input[type="color"]:hover, input[type="submit"]:hover{
+            input[type="color"]:hover{
                 box-shadow: 3px 4px 3px black;
             }
             span{
@@ -63,6 +59,9 @@ terrible practices.
             }
             ul{
                 list-style-type: none;
+            }
+            #form{
+                margin: 2em 0;
             }
             #reviews li:not(:first-child){
                 font-style: italic;
@@ -104,16 +103,15 @@ terrible practices.
         <img src="avatar.png" id="photo">
         <form id="form" action="avatar.php" method="get">
             <ul>
-                <li>Background color: <input type="color" id="background" class="f" name="background" value="#ececec" required></li>
-                <li>Main color: <input type="color" id="main" class="f" name="main" value="#64d958" required></li>
+                <li>Background color: <input type="color" id="background" name="background" value="#ececec" required></li>
+                <li>Main color: <input type="color" id="main" name="main" value="#64d958" required></li>
             </ul>
             <ul>
                 <li>Orientation (clockwise and relative to the initial orientation):</li>
                 <li class="i"><input type="radio" name="rotate" value="0" checked> 0&deg;</li>
-                <li class="i"><input type="radio" name="rotate" value="90"> 90&deg; = &orarr;</li>
-                <li class="i"><input type="radio" name="rotate" value="180"> 180&deg; = &orarr;&orarr;</li>
-                <li class="i"><input type="radio" name="rotate" value="270"> 270&deg; = &olarr;</li>
-                <li><input type="submit" class="f" value="Generate"></li>
+                <li class="i"><input type="radio" name="rotate" value="90"> 90&deg; = &curarr;</li>
+                <li class="i"><input type="radio" name="rotate" value="180"> 180&deg; = &curarr;&curarr;</li>
+                <li class="i"><input type="radio" name="rotate" value="270"> 270&deg; = &cularr;</li>
             </ul>
         </form>
         <p>
@@ -143,15 +141,14 @@ terrible practices.
         </ul>
         <p id="quote">~ Love SOFe, because he is life &hearts; ~</p>
         <script>
-            $("form").onsubmit = function(){
-                $("photo").src = "avatar.php?background=" + e($("background").value) + "&main=" + e($("main").value) + "&rotate=" + e(document.querySelector("input[name='rotate']:checked").value);
-                return false;
+            i("form").onchange = function(){
+                i("photo").src = "avatar.php?background=" + e(i("background").value) + "&main=" + e(i("main").value) + "&rotate=" + e(document.querySelector("input[name='rotate']:checked").value);
             };
-            function $(e){
-                return document.getElementById(e);
-            }
             function e(v){
                 return encodeURIComponent(v);
+            }
+            function i(e){
+                return document.getElementById(e);
             }
         </script>
     </body>
