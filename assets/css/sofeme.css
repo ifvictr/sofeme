@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, input{
+    font-family: "Source Code Pro", sans-serif;
+    margin: auto;
+    text-align: center;
+}
+body{
+    margin-bottom: 2em;
+    max-width: 50%;
+    transition: 0.2s all ease-in-out;
+}
+body > *, ul > *{
+    margin-top: 1em;
+}
+a{
+    color: #0000ff;
+}
+a:hover{
+    opacity: 0.65;
+}
+a:active{
+    opacity: 0.85;
+}
+img{
+    max-width: 100%;
+}
+input{
+    background: none;
+    border: 2px solid #64d958;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16pt;
+    outline: 0;
+    padding: 0.5em;
+    text-transform: lowercase;
+}
+input[type="image"]{
+    border: 0;
+}
+span{
+    display: block;
+}
+ul{
+    list-style-type: none;
+}
+#form{
+    margin: 2em 0;
+}
+#reviews li:not(:first-child){
+    font-style: italic;
+}
+#reviews li:not(:first-child):before, #reviews li:not(:first-child):after{
+    content: "\"";
+}
+#quote{
+    margin-top: 4em;
+}
+.i{
+    display: inline-block;
+}
+@media screen and (max-width: 736px){
+    body{
+        max-width: 70%;
+    }
+}
+@media screen and (max-width: 480px){
+    body{
+        max-width: 80%;
+    }
+    .i{
+        display: block;
+        width: 100%;
+    }
+}

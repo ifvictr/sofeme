@@ -7,7 +7,7 @@ So everyone wants to be a [@SOF3](https://forums.pmmp.io/members/sofe.4) (altern
 
 ### Setup
 1. Clone this repository locally.
-2. Install the Imagick extensions with `sudo apt-get install php5-imagick`.
+2. Install the Imagick extension with command `sudo apt-get install php5-imagick`.
 2. Start your webserver.
 3. Generate SOFe avatars and set them as your profile picture everywhere.
 
